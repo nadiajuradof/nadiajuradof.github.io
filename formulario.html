@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nadia Jurado">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Ponte en contacto con nosotros para consultas, sugerencias o colaborar en nuestro blog de viajes. Estamos aquí para ayudarte.">
+    <meta name="keywords" content="contacto, blog de viajes, consulta, sugerencias, colaboraciones">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./estilos/principal.css"> 
+</head>
+<body>
+        <header class="main-header">
+        <div class="container">
+        <h1>Formulario de Contacto</h1>
+       <!-- Menú de navegación -->
+       <nav>
+        <ul>
+            <!-- Enlaces del menú de navegación -->
+            <li><a href="principal.html">Inicio</a></li> <!-- Enlace al inicio -->
+            <li><a href="./continentes/western-europe.html">Western Europe</a></li> <!-- Enlace a la sección Europa Occidental -->
+            <li><a href="./continentes/southern-europe.html">Southern Europe</a></li> <!-- Enlace a la sección Europa del Sur -->
+            <li><a href="./continentes/eastern-europe.html">Eastern Europe</a></li> <!-- Enlace a la sección Europa del Este -->
+            <li><a href="./continentes/africa.html">Africa</a></li> <!-- Enlace a la sección África -->
+            <li><a href="./continentes/south-america.html">South America</a></li> <!-- Enlace a la sección Sudamérica -->
+            <li><a href="./continentes/northern-europe.html">Northern Europe</a></li> <!-- Enlace a la sección Europa del Norte -->
+            <li><a href="formulario.html">Contacto</a></li> <!-- Enlace al formulario de contacto -->
+        </ul>
+    </nav>
+    </div>
+    </header>
+
+    <main>
+        <section id="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <p>Si te gustaría saber más infromación sobre algún destino o te gustaría recibir orientación acerca de tu pròximo viaje, no dudes en contactar con nosotros 🤗<br><br></p>
+            <form id="contactForm"> 
+            <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div>
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" name="observaciones" placeholder="Escribe tus comentarios o preguntas" rows="5"></textarea>
+                </div>
+                <div>
+                    <!-- Nueva casilla de verificación -->
+                    <label>
+                        <input type="checkbox" id="privacidad" name="privacidad" value="Sí" required>
+                        He leído y acepto la <a class = 'enllaç' href="politica-privacidad.html" target="_blank">Política de Privacidad</a>.
+                    </label>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            
+            </form>
+        
+        </section>
+    </main>
+
+     <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <!-- Información de derechos de autor -->
+            <p>&copy; 2024 Todos los derechos reservados. 
+                <br> 
+                <!-- Enlace a la política de privacidad -->
+                <a class="enllaç" href="politica-privacidad.html">Política de Privacidad</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

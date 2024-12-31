@@ -1,0 +1,231 @@
+/* Elimina márgenes y rellenos predeterminados y ajusta el modelo de caja para todos los elementos */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y los bordes dentro de las dimensiones del elemento */
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: "Cambria", "Georgia", serif; /* Fuente serif elegante */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    color: #333; /* Color de texto oscuro */
+    height: 100%; /* Que el cuerpo ocupe toda la altura disponible */
+    display: flex; /* Organiza el contenido usando Flexbox */
+    flex-direction: column; /* Los elementos se alinean en una columna */
+    line-height: 1.6; /* Espaciar las líneas */
+}
+
+/* Encabezado */
+header {
+    position: relative; /* Establece un contexto de posicionamiento para elementos hijos */
+    height: 300px; /* Altura del encabezado */
+    background: url('../recursos/continents.jpg') no-repeat center/cover; /* Agrega una imagen de fondo centrada y ajustada */
+    color: white; /* Cambia el color del texto a blanco para contraste */
+    display: flex; /* Usa Flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+header h1 {
+    font-size: 3.5rem; /* Define un tamaño grande para el título principal */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Agrega una sombra al texto */
+}
+
+header nav {
+    margin-top: 20px; /* Añade espacio superior al menú de navegación */
+}
+
+header nav ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    display: flex; /* Organiza los elementos en fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Añade espacio entre los elementos de la lista */
+}
+
+header nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 1.1rem; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Texto más grueso */
+    padding: 10px 15px; /* Añade espacio interno al enlace */
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cambia el fondo del enlace al pasar el ratón */
+    border-radius: 5px; /* Redondea los bordes del enlace */
+    color: #f4f4f4; /* Ajusta ligeramente el color del texto */
+}
+
+/* Estilo para la introducción */
+.intro {
+    text-align: center; /* Centra el texto */
+    padding: 30px 20px; /* Agrega espacio interno alrededor del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    background: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el contenedor */
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    border-radius: 8px; /* Redondea las esquinas */
+}
+
+/* Contenedor de los botones con imágenes */
+.buttons-container {
+    display: flex; /* Usa Flexbox para organizar los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
+    gap: 25px; /* Añade espacio entre los botones */
+    padding: 30px 10px; /* Agrega espacio interno al contenedor */
+}
+
+/* Botones individuales */
+.button {
+    display: block; /* Hace que el botón sea un bloque */
+    width: 220px; /* Ancho del botón */
+    height: 160px; /* Altura del botón */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.3rem; /* Tamaño del texto */
+    line-height: 160px; /* Centra verticalmente el texto */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    border-radius: 10px; /* Redondea las esquinas */
+    background-size: cover; /* Ajusta el fondo para que cubra todo el botón */
+    background-position: center; /* Centra la imagen de fondo */
+    position: relative; /* Establece un contexto de posicionamiento para elementos internos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra para resaltar el botón */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave para los efectos */
+}
+
+.button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el ratón */
+}
+.contenedor {
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 30px 20px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.button span {
+    position: relative; /* Posiciona el texto de forma relativa dentro del botón */
+    z-index: 2; /* Que el texto quede encima de otros elementos */
+    font-weight: bold; /* Texto más grueso */
+}
+
+
+/* Botones con imágenes específicas */
+#western-europe {
+    background-image: url('../recursos/europe.PNG'); /* Imagen de fondo para Europa Occidental */
+}
+
+#southern-europe {
+    background-image: url('../recursos/europe.PNG'); /* Imagen de fondo para Europa del Sur */
+}
+
+#eastern-europe {
+    background-image: url('../recursos/europe.PNG'); /* Imagen de fondo para Europa del Este */
+}
+
+#africa {
+    background-image: url('../recursos/africa.PNG'); /* Imagen de fondo para África */
+}
+
+#south-america {
+    background-image: url('../recursos/southamerica.PNG'); /* Imagen de fondo para Sudamérica */
+}
+
+#northern-europe {
+    background-image: url('../recursos/europe.PNG'); /* Imagen de fondo para Europa del Norte */
+}
+
+/* Estilos para el formulario de contacto */
+#formulario-contacto {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 40px auto; /* Centra el formulario en la página */
+    padding: 20px; /* Añade espacio interno dentro del formulario */
+    background: #f9f9f9; /* Fondo claro para el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+    border-radius: 8px; /* Redondea las esquinas del formulario */
+}
+
+/* Estilo del título dentro del formulario */
+#formulario-contacto h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo de los contenedores de los campos del formulario */
+#formulario-contacto div {
+    margin-bottom: 15px; /* Espacio entre cada campo */
+}
+
+/* Estilo de las etiquetas dentro del formulario */
+#formulario-contacto label {
+    display: block; /* Etiqueta ocupe toda la línea */
+    font-weight: bold; /* Resalta el texto de la etiqueta */
+    margin-bottom: 5px; /* Añade un pequeño espacio debajo de la etiqueta */
+}
+
+/* Estilo de los campos de entrada y área de texto */
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%; /* Campos ocupen todo el ancho disponible */
+    padding: 10px; /* Relleno dentro de los campos */
+    border: 1px solid #ddd; /* Borde para los campos */
+    border-radius: 5px; /* Redondea las esquinas  */
+    font-size: 1rem; /* Tamaño del texto dentro de los campos */
+}
+
+/* Estilo del botón de envío del formulario */
+#formulario-contacto button {
+    display: block; /* Botón ocupe toda la línea */
+    width: 100%; /* Botón ocupe todo el ancho disponible */
+    padding: 10px; /* Relleno dentro del botón */
+    background: rgb(36, 48, 66); /* Fondo oscuro para el botón */
+    color: white; /* Color del texto en blanco */
+    font-size: 1.1rem; /* Tamaño del texto en el botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+}
+
+/* Estilo del botón al pasar el ratón */
+#formulario-contacto button:hover {
+    background: #c4aa84; /* Fondo dorado al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: rgb(36, 48, 66); /* Fondo oscuro */
+    color: white; /* Cambia el texto a blanco */
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Añade espacio interno */
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    font-size: 0.9rem; /* Tamaño pequeño para el texto */
+}
+
+.enllaç {
+    color: #c4aa84; /* Color del enlace */
+}
+
+.enllaç:hover {
+    color: darkgray; /* Cambia el color del enlace al pasar el ratón */
+}
+
+/* Ajusta los estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título principal */
+    }
+
+    .button {
+        width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
+        max-width: 300px; /* Limita el ancho máximo de los botones */
+    }
+}
